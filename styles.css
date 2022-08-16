@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.pageContainer {
+    display: flex;
+    min-height: 100vh;
+}
+
+.flexbox-item {
+    width: 200px;
+}
+
+.leftColumn {
+    min-height: 100px;
+    width: 350px;
+    flex-grow: 1;
+    background-image: url("sign-up-bg3.jpg");
+    background-size: cover;
+    display: flex;
+  }
+
+.logoContainer {
+    min-height: 185px;
+    max-height: 185px;
+    background-color: rgb(255, 112, 112);
+    opacity: 90%;
+    flex: 1;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.odinLogo {
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.logoText {
+    color: white;
+    font-size: 55px;
+    @font-face {
+        font-family: "ArchivoBlack";
+        src: url("ArchivoBlack-Regular.ttf");
+        }
+}
+
+.rightColumn {
+    min-height: 200px;
+    width: 500px;
+    flex-grow: 2;
+    background-color: #f3f2f2;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, sans-serif;
+}
+
+.headerTextCont {
+    max-height: 34vh;
+    max-width: 650px;
+    min-width: 180px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    padding-top: 15vh;
+    font-size: 24px;
+    font-weight: bold;
+    overflow: auto;
+}
+
+
+.formRow {
+    color: #565656;
+    background-color: white;
+    min-height: 260px;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 6px 4px 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+
+}
+
+.inpRow3 {
+    margin-bottom: 30px;
+}
+
+.fNameInp, .emailInp, .pwdInp {
+    padding-right: 60px;
+}
+
+.input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+.inpRow1, .inpRow2, .inpRow3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.formText {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width : 220px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+input:focus {
+    outline: none !important;
+    border:1px solid rgb(0, 119, 255);
+    height: 22px;
+    box-shadow: 0px 1px 9px -5px #000000;
+}
+
+.submit {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.submitBtn {
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+    background-color: rgb(255, 112, 112);
+	border-radius:6px;
+	border:1px solid #ffaba3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ff867d;
+}
+
+.submitBtn:hover {
+	background:linear-gradient(to bottom, rgb(255, 112, 112), #fc8d83 100%);
+    background-color: rgb(255, 112, 112);
+}
+
+.submitBtn:active {
+	position:relative;
+	top:1px;
+}
+
